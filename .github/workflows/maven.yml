@@ -29,7 +29,7 @@ jobs:
 
     - name: Build with  
       run: |
-       java  -Dfile.encoding=UTF-8 -cp p2App.jar p2download.ManApp  AppName=P2Lib2PorxyDownload   path=repository async=true isGuiMode=false
+       java  -Dfile.encoding=UTF-8 -cp p2App.jar p2download.ManApp  AppName=P2Lib2PorxyDownload   path=repository async=false isGuiMode=false  downloaderTimeout=60000
        
      # 2. 安装 zip 工具（如果需要）
     - name: Install zip
